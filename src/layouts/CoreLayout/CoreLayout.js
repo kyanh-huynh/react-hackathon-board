@@ -50,6 +50,47 @@ function CoreLayout ({ children }) {
   );
 }
 
+var NavBarLeft = React.createClass({
+
+  render: function () {
+    return(
+      <div>
+        <div>
+          <div className="fixed-menu">
+          <Menu className="borderless stackable">
+            <Link activeClassName="active" className="item" to="hackathons">
+              <Icon className="home" />  <Translate value="menu.home"/>
+            </Link>
+            <Link activeClassName="active" className="item" to="hacks">
+              <Icon className="lab" /> <Translate value="menu.hacks"/>
+            </Link>
+            <Link activeClassName="active" className="item" to="rules">
+              <Icon className="book" /> <Translate value="menu.rules"/>
+            </Link>
+            <Link activeClassName="active" className="item" to="prizes">
+              <Icon className="gift" /> <Translate value="menu.prizes"/>
+            </Link>
+            <Link activeClassName="active" className="item" to="judging">
+              <Icon className="trophy" /> <Translate value="menu.judging"/>
+            </Link>
+            <Link activeClassName="active" className="item" to="people">
+              <Icon className="users" /> <Translate value="menu.people"/>
+            </Link>
+            <Link activeClassName="active" className="item" to="beautifier">
+              <Icon className="code" /> <Translate value="menu.beautifier"/>
+            </Link>
+            <AccountNavBarView />
+          </Menu>
+          </div>
+          <div className="ui fluid padding-top-70px">
+            <HackathonHeaderView />
+          </div>
+        </div>
+      </div>
+    );
+  }
+});
+
 var All = React.createClass({
   showHamburger: function(event) {
     event.preventDefault();
@@ -104,47 +145,6 @@ var All = React.createClass({
     );
   }
 
-});
-
-var NavBarLeft = React.createClass({
-
-  render: function () {
-    return(
-      <div>
-        <div>
-          <div className="fixed-menu">
-          <Menu className="borderless stackable">
-            <Link activeClassName="active" className="item" to="hackathons">
-              <Icon className="home" />  <Translate value="menu.home"/>
-            </Link>
-            <Link activeClassName="active" className="item" to="hacks">
-              <Icon className="lab" /> <Translate value="menu.hacks"/>
-            </Link>
-            <Link activeClassName="active" className="item" to="rules">
-              <Icon className="book" /> <Translate value="menu.rules"/>
-            </Link>
-            <Link activeClassName="active" className="item" to="prizes">
-              <Icon className="gift" /> <Translate value="menu.prizes"/>
-            </Link>
-            <Link activeClassName="active" className="item" to="judging">
-              <Icon className="trophy" /> <Translate value="menu.judging"/>
-            </Link>
-            <Link activeClassName="active" className="item" to="people">
-              <Icon className="users" /> <Translate value="menu.people"/>
-            </Link>
-            <Link activeClassName="active" className="item" to="beautifier">
-              <Icon className="code" /> <Translate value="menu.beautifier"/>
-            </Link>
-            <AccountNavBarView />
-          </Menu>
-          </div>
-          <div className="ui fluid padding-top-70px">
-            <HackathonHeaderView />
-          </div>
-        </div>
-      </div>
-    );
-  }
 });
 
 CoreLayout.propTypes = {

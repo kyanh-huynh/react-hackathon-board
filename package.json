@@ -4,8 +4,8 @@
   "description": "Hackathon board with React/node/mongo",
   "main": "index.js",
   "engines": {
-    "node": ">=4.2.0",
-    "npm": "^3.0.0"
+    "node": "7.3.0",
+    "npm": "^3.10.10"
   },
   "scripts": {
     "clean": "rimraf dist",
