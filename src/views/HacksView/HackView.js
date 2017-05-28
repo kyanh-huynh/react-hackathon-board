@@ -1,5 +1,6 @@
 /* @flow */
-import React, { PropTypes } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { actions as hackActions } from '../../redux/modules/hack';
 import classes from './HacksView.scss';

@@ -1,4 +1,5 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 import '../../styles/core.scss';
 import { render } from 'react-dom';
 import { Provider, connect } from 'react-redux';

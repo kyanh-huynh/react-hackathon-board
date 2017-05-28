@@ -142,6 +142,7 @@
     "passport-local": "^1.0.0",
     "passport-twitter": "^1.0.4",
     "pretty-data": "^0.40.0",
+    "prop-types": "^15.5.10",
     "re-notif": "^1.0.2",
     "react": "^15.3.0",
     "react-addons-css-transition-group": "^15.3.0",

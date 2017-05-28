@@ -1,18 +1,9 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 import '../../styles/core.scss';
-import { render } from 'react-dom';
-import { Provider, connect } from 'react-redux';
-import { Router, Route, Link } from 'react-router';
+import { connect } from 'react-redux';
 import { actions } from '../../redux/modules/locale';
-import { Menu, Item, Icon, Dropdown} from 'react-semantify';
-import moment from 'moment';
-
-type
-Props = {
-  locale: Object,
-  user: Object,
-  update: Function
-};
+import { Menu, Item, Dropdown } from 'react-semantify';
 
 class LocalePickerView extends React.Component {
 
@@ -22,29 +13,29 @@ class LocalePickerView extends React.Component {
     update: PropTypes.func.isRequired
   };
 
-  componentWillMount() {
+  componentWillMount () {
     this.handleSwitch = this.handleSwitch.bind(this);
   }
 
-  handleSwitch(lang) {
+  handleSwitch (lang) {
     this.props.update(lang);
   }
 
-  render() {
+  render () {
     return (
-      <Dropdown init={true} className="half-width">
+      <Dropdown init className="half-width">
         <div className="item">
-          <i className={this.props.locale.lang ? this.props.locale.lang +  " flag" : "gb flag"} />
+          <i className={this.props.locale.lang ? this.props.locale.lang + ' flag' : 'gb flag'} />
         </div>
         <Menu className="ui borderless">
-          <Item className="" onClick={() => this.handleSwitch('gb')} >
-              <i className="gb flag"></i>English
+          <Item className="" onClick={this.handleSwitch('gb')}>
+            <i className="gb flag" />English
           </Item>
-          <Item className="" onClick={() => this.handleSwitch('fr')}>
-                <i className="fr flag"></i>French
+          <Item className="" onClick={this.handleSwitch('fr')}>
+            <i className="fr flag" />French
           </Item>
-          <Item className="disabled" onClick={() => this.handleSwitch('de')}>
-              <i className="de flag"></i>German
+          <Item className="disabled" onClick={this.handleSwitch('de')}>
+            <i className="de flag" />German
           </Item>
         </Menu>
       </Dropdown>
