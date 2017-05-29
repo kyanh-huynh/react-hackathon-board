@@ -36,11 +36,11 @@ $ pacman -S mongodb
 $ systemctl start mongodb
 $ git clone https://github.com/kyanh-huynh/react-hackathon-board
 $ nvm install 6
-$ nvm install
-$ nvm rebuild node-sass
+$ npm install
+$ npm rebuild node-sass
 $ ## edit config/_production.js and use your custom URL.
-$ nvm run deploy
-$ nvm run start:prod
+$ npm run deploy
+$ npm run start:prod
 ```
 
 Requirements
