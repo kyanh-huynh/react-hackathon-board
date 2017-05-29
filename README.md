@@ -11,6 +11,7 @@ See features [here](https://hirako2000.github.io/2016/12/17/React-Hackathon-Boar
 
 Table of Contents
 -----------------
+1. [Install on Ubuntu 16](#install-on-ubuntu-16)
 1. [Requirements](#requirements)
 1. [Features](#features)
 1. [Getting Started](#getting-started)
@@ -24,6 +25,23 @@ Table of Contents
 1. [Deployment](#deployment)
 1. [Troubleshooting](#troubleshooting)
 1. [Thank You](#thank-you)
+
+Install on Ubuntu 16
+--------------------
+
+After many tries and tries...
+
+```
+$ pacman -S mongodb
+$ systemctl start mongodb
+$ git clone https://github.com/kyanh-huynh/react-hackathon-board
+$ nvm install 6
+$ nvm install
+$ nvm rebuild node-sass
+$ ## edit config/_production.js and use your custom URL.
+$ nvm run deploy
+$ nvm run start:prod
+```
 
 Requirements
 ------------
