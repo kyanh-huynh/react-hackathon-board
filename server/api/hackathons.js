@@ -5,7 +5,7 @@ import multer from 'koa-router-multer';
 const uploadDir = './uploads/';
 const imageDir = './src/static/user-images/';
 var upload = multer({ dest: uploadDir });
-import lwip from 'lwip';
+import lwip from 'pajk-lwip';
 import _ from 'lodash';
 
 const hackathons = new Router();
