@@ -1,4 +1,5 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 import DropzoneComponent from 'react-dropzone-component/lib/react-dropzone';
 import ReactDOMServer from 'react-dom/server';
 

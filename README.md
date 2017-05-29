@@ -28,8 +28,8 @@ Table of Contents
 Requirements
 ------------
 
-* node `^4.2.0`
-* npm `^3.0.0`
+* node `7.3.0`
+* npm `3.10.10`
 
 Features
 --------
